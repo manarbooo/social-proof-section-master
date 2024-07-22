@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root{
+    --Very_Dark_Magenta: hsl(300, 43%, 22%);
+    --Soft_Pink: hsl(333, 80%, 67%);
+    --Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+    --Light_Grayish_Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+
+body{
+    height: fit-content;
+    font-family: "League Spartan", sans-serif;
+    background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 50%, 50%;
+
+
+}
+
+
+    
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.mainTitle{
+  color: var(--Very_Dark_Magenta);
+  font-size: 2.9rem;
+}
+
+.description{
+    color: var(--Very_Dark_Magenta);
+    line-height: 1.7;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+}
+
+.ratingCard1, .ratingCard2, .ratingCard3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    height: 60px;
+    background-color: var(--Light_Grayish_Magenta);
+    margin: 10px;
+    border-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: var(--Very_Dark_Magenta);
+}
+
+.starIcon{
+   margin-right: 3px;
+    
+}
+.ratingCards{
+    display: flex;
+    flex-direction: column;
+}
+.ratingCard2{
+    margin-left: 60px;
+}
+
+.ratingCard2 .starIcon{
+  margin-right: 7px;
+}
+
+.ratingCard3{
+    margin-left: 100px;
+}
+.ratingCards{
+    margin-left: 160px;
+    margin-top: 60px;
+    gap: 20px;
+}
+.caption{
+    margin-left: 3px;
+}
+
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testemonialCard1, .testemonialCard2, .testemonialCard3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Very_Dark_Magenta);
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.testemonialCard2{
+    margin-top: 100px;
+}
+.testemonialCard3{
+    margin-top: 140px;
+}
+
+.cardProfile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: -100px;
+}
+
+
+.cardImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.profileDesc{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name{
+    color: var(--White);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.verified{
+    color: var(--Soft_Pink);
+    font-weight: 600;
+}
+
+.testemonial{
+    color: var(--White);
+    margin: 20px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1050px){
+    
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header{
+        text-align: center;
+        margin: 0;
+    }
+    .mainTitle{
+        font-size: 2.1rem;
+    }
+    .ratingCards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .ratingCard1, .ratingCard2, .ratingCard3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .testemonialCard1, .testemonialCard2, .testemonialCard3{
+        
+        width: 80%;
+        margin: 20px;
+       
+    }
+}
